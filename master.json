@@ -1,0 +1,602 @@
+{
+	"id": 0,
+	"name": "@klasa/timer-manager",
+	"kind": 0,
+	"flags": {},
+	"originalName": "",
+	"children": [
+		{
+			"id": 1,
+			"name": "\"index\"",
+			"kind": 1,
+			"kindString": "Module",
+			"flags": {
+				"isExported": true
+			},
+			"originalName": "/home/runner/work/timer-manager/timer-manager/src/index.ts",
+			"children": [
+				{
+					"id": 2,
+					"name": "TimerManager",
+					"kind": 128,
+					"kindString": "Class",
+					"flags": {
+						"isExported": true
+					},
+					"comment": {
+						"shortText": "Manages timers so that this application can be cleanly exited"
+					},
+					"children": [
+						{
+							"id": 4,
+							"name": "_intervals",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isPrivate": true,
+								"isStatic": true,
+								"isExported": true
+							},
+							"comment": {
+								"shortText": "A collection of intervals to clear on destroy"
+							},
+							"sources": [
+								{
+									"fileName": "index.ts",
+									"line": 14,
+									"character": 26
+								}
+							],
+							"type": {
+								"type": "reference",
+								"typeArguments": [
+									{
+										"type": "reference",
+										"name": "Timeout"
+									}
+								],
+								"name": "Set"
+							},
+							"defaultValue": "new Set()"
+						},
+						{
+							"id": 3,
+							"name": "_timeouts",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isPrivate": true,
+								"isStatic": true,
+								"isExported": true
+							},
+							"comment": {
+								"shortText": "A collection of timeouts to clear on destroy"
+							},
+							"sources": [
+								{
+									"fileName": "index.ts",
+									"line": 9,
+									"character": 25
+								}
+							],
+							"type": {
+								"type": "reference",
+								"typeArguments": [
+									{
+										"type": "reference",
+										"name": "Timeout"
+									}
+								],
+								"name": "Set"
+							},
+							"defaultValue": "new Set()"
+						},
+						{
+							"id": 26,
+							"name": "clearInterval",
+							"kind": 2048,
+							"kindString": "Method",
+							"flags": {
+								"isPublic": true,
+								"isStatic": true,
+								"isExported": true
+							},
+							"signatures": [
+								{
+									"id": 27,
+									"name": "clearInterval",
+									"kind": 4096,
+									"kindString": "Call signature",
+									"flags": {
+										"isExported": true
+									},
+									"comment": {
+										"shortText": "Clears an interval set via Project Blue"
+									},
+									"parameters": [
+										{
+											"id": 28,
+											"name": "interval",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {
+												"isExported": true
+											},
+											"comment": {
+												"text": "The interval to clear\n"
+											},
+											"type": {
+												"type": "reference",
+												"name": "Timeout"
+											}
+										}
+									],
+									"type": {
+										"type": "intrinsic",
+										"name": "void"
+									}
+								}
+							],
+							"sources": [
+								{
+									"fileName": "index.ts",
+									"line": 56,
+									"character": 28
+								}
+							]
+						},
+						{
+							"id": 14,
+							"name": "clearTimeout",
+							"kind": 2048,
+							"kindString": "Method",
+							"flags": {
+								"isPublic": true,
+								"isStatic": true,
+								"isExported": true
+							},
+							"signatures": [
+								{
+									"id": 15,
+									"name": "clearTimeout",
+									"kind": 4096,
+									"kindString": "Call signature",
+									"flags": {
+										"isExported": true
+									},
+									"comment": {
+										"shortText": "Clears a timeout set via Project Blue"
+									},
+									"parameters": [
+										{
+											"id": 16,
+											"name": "timeout",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {
+												"isExported": true
+											},
+											"comment": {
+												"text": "The timeout to clear\n"
+											},
+											"type": {
+												"type": "reference",
+												"name": "Timeout"
+											}
+										}
+									],
+									"type": {
+										"type": "intrinsic",
+										"name": "void"
+									}
+								}
+							],
+							"sources": [
+								{
+									"fileName": "index.ts",
+									"line": 35,
+									"character": 27
+								}
+							]
+						},
+						{
+							"id": 29,
+							"name": "destroy",
+							"kind": 2048,
+							"kindString": "Method",
+							"flags": {
+								"isPublic": true,
+								"isStatic": true,
+								"isExported": true
+							},
+							"signatures": [
+								{
+									"id": 30,
+									"name": "destroy",
+									"kind": 4096,
+									"kindString": "Call signature",
+									"flags": {
+										"isExported": true
+									},
+									"comment": {
+										"shortText": "Clears running timeouts and intervals created in Project Blue so node can gracefully exit"
+									},
+									"type": {
+										"type": "intrinsic",
+										"name": "void"
+									}
+								}
+							],
+							"sources": [
+								{
+									"fileName": "index.ts",
+									"line": 64,
+									"character": 22
+								}
+							]
+						},
+						{
+							"id": 17,
+							"name": "setInterval",
+							"kind": 2048,
+							"kindString": "Method",
+							"flags": {
+								"isPublic": true,
+								"isStatic": true,
+								"isExported": true
+							},
+							"signatures": [
+								{
+									"id": 18,
+									"name": "setInterval",
+									"kind": 4096,
+									"kindString": "Call signature",
+									"flags": {
+										"isExported": true
+									},
+									"comment": {
+										"shortText": "Set an interval that Project Blue can clear when destroyed"
+									},
+									"typeParameter": [
+										{
+											"id": 19,
+											"name": "A",
+											"kind": 131072,
+											"kindString": "Type parameter",
+											"flags": {
+												"isExported": true
+											}
+										}
+									],
+									"parameters": [
+										{
+											"id": 20,
+											"name": "fn",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {
+												"isExported": true
+											},
+											"comment": {
+												"text": "callback function"
+											},
+											"type": {
+												"type": "reflection",
+												"declaration": {
+													"id": 21,
+													"name": "__type",
+													"kind": 65536,
+													"kindString": "Type literal",
+													"flags": {
+														"isExported": true
+													},
+													"signatures": [
+														{
+															"id": 22,
+															"name": "__call",
+															"kind": 4096,
+															"kindString": "Call signature",
+															"flags": {
+																"isExported": true
+															},
+															"parameters": [
+																{
+																	"id": 23,
+																	"name": "args",
+																	"kind": 32768,
+																	"kindString": "Parameter",
+																	"flags": {
+																		"isExported": true,
+																		"isRest": true
+																	},
+																	"type": {
+																		"type": "array",
+																		"elementType": {
+																			"type": "typeParameter",
+																			"name": "A"
+																		}
+																	}
+																}
+															],
+															"type": {
+																"type": "intrinsic",
+																"name": "void"
+															}
+														}
+													],
+													"sources": [
+														{
+															"fileName": "index.ts",
+															"line": 46,
+															"character": 43
+														}
+													]
+												}
+											}
+										},
+										{
+											"id": 24,
+											"name": "delay",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {
+												"isExported": true
+											},
+											"comment": {
+												"text": "amount of time before running the callback"
+											},
+											"type": {
+												"type": "intrinsic",
+												"name": "number"
+											}
+										},
+										{
+											"id": 25,
+											"name": "args",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {
+												"isExported": true,
+												"isRest": true
+											},
+											"comment": {
+												"text": "additional arguments to pass back to the callback\n"
+											},
+											"type": {
+												"type": "array",
+												"elementType": {
+													"type": "typeParameter",
+													"name": "A"
+												}
+											}
+										}
+									],
+									"type": {
+										"type": "reference",
+										"name": "Timeout"
+									}
+								}
+							],
+							"sources": [
+								{
+									"fileName": "index.ts",
+									"line": 46,
+									"character": 26
+								}
+							]
+						},
+						{
+							"id": 5,
+							"name": "setTimeout",
+							"kind": 2048,
+							"kindString": "Method",
+							"flags": {
+								"isPublic": true,
+								"isStatic": true,
+								"isExported": true
+							},
+							"signatures": [
+								{
+									"id": 6,
+									"name": "setTimeout",
+									"kind": 4096,
+									"kindString": "Call signature",
+									"flags": {
+										"isExported": true
+									},
+									"comment": {
+										"shortText": "Set a timeout that Project Blue can clear when destroyed"
+									},
+									"typeParameter": [
+										{
+											"id": 7,
+											"name": "A",
+											"kind": 131072,
+											"kindString": "Type parameter",
+											"flags": {
+												"isExported": true
+											}
+										}
+									],
+									"parameters": [
+										{
+											"id": 8,
+											"name": "fn",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {
+												"isExported": true
+											},
+											"comment": {
+												"text": "callback function"
+											},
+											"type": {
+												"type": "reflection",
+												"declaration": {
+													"id": 9,
+													"name": "__type",
+													"kind": 65536,
+													"kindString": "Type literal",
+													"flags": {
+														"isExported": true
+													},
+													"signatures": [
+														{
+															"id": 10,
+															"name": "__call",
+															"kind": 4096,
+															"kindString": "Call signature",
+															"flags": {
+																"isExported": true
+															},
+															"parameters": [
+																{
+																	"id": 11,
+																	"name": "args",
+																	"kind": 32768,
+																	"kindString": "Parameter",
+																	"flags": {
+																		"isExported": true,
+																		"isRest": true
+																	},
+																	"type": {
+																		"type": "array",
+																		"elementType": {
+																			"type": "typeParameter",
+																			"name": "A"
+																		}
+																	}
+																}
+															],
+															"type": {
+																"type": "intrinsic",
+																"name": "void"
+															}
+														}
+													],
+													"sources": [
+														{
+															"fileName": "index.ts",
+															"line": 22,
+															"character": 42
+														}
+													]
+												}
+											}
+										},
+										{
+											"id": 12,
+											"name": "delay",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {
+												"isExported": true
+											},
+											"comment": {
+												"text": "amount of time before running the callback"
+											},
+											"type": {
+												"type": "intrinsic",
+												"name": "number"
+											}
+										},
+										{
+											"id": 13,
+											"name": "args",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {
+												"isExported": true,
+												"isRest": true
+											},
+											"comment": {
+												"text": "additional arguments to pass back to the callback\n"
+											},
+											"type": {
+												"type": "array",
+												"elementType": {
+													"type": "typeParameter",
+													"name": "A"
+												}
+											}
+										}
+									],
+									"type": {
+										"type": "reference",
+										"name": "Timeout"
+									}
+								}
+							],
+							"sources": [
+								{
+									"fileName": "index.ts",
+									"line": 22,
+									"character": 25
+								}
+							]
+						}
+					],
+					"groups": [
+						{
+							"title": "Properties",
+							"kind": 1024,
+							"children": [
+								4,
+								3
+							]
+						},
+						{
+							"title": "Methods",
+							"kind": 2048,
+							"children": [
+								26,
+								14,
+								29,
+								17,
+								5
+							]
+						}
+					],
+					"sources": [
+						{
+							"fileName": "index.ts",
+							"line": 4,
+							"character": 25
+						}
+					],
+					"extendedTypes": [
+						{
+							"type": "intrinsic",
+							"name": "any"
+						}
+					]
+				}
+			],
+			"groups": [
+				{
+					"title": "Classes",
+					"kind": 128,
+					"children": [
+						2
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "index.ts",
+					"line": 1,
+					"character": 0
+				}
+			]
+		}
+	],
+	"groups": [
+		{
+			"title": "Modules",
+			"kind": 1,
+			"children": [
+				1
+			]
+		}
+	]
+}
