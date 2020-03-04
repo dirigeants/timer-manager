@@ -1,6 +1,8 @@
 import ava from 'ava';
-import util from '../dist';
+import { TimerManager } from '../dist';
 
-ava('sample test', (test): void => {
-	test.is(util(), 'bar');
+ava('no new', (test): void => {
+	test.throws(() => new TimerManager(), { instanceOf: Error });
 });
+
+// Ehh, not sure how the rest should be tested, tbd

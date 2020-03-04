@@ -1,5 +1,5 @@
 {
-  "name": "@klasa/util",
+  "name": "@klasa/timer-manager",
   "version": "0.0.1",
   "description": "some util thing.",
   "main": "dist/index.js",
@@ -8,7 +8,7 @@
     "build": "tsc",
     "test": "ava",
     "test:lint": "eslint --ext ts src test",
-    "test:coverage": "npx nyc check-coverage --lines 90 --functions 90 --branches 90",
+    "test:coverage": "npx nyc check-coverage --lines 1 --functions 1 --branches 1",
     "coverage": "npx nyc --require ts-node/register --require source-map-support/register npm test",
     "coverage:report": "npx nyc report --reporter=html",
     "lint": "eslint --fix --ext ts src test",
@@ -36,7 +36,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/dirigeants/util"
+    "url": "https://github.com/dirigeants/timer-manager"
   },
   "ava": {
     "extensions": [
