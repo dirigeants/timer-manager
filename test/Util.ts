@@ -1,5 +1,5 @@
 import ava from 'ava';
-import { TimerManager } from '../dist';
+import util from '../src';
 
 ava('no new', (test): void => {
 	test.throws(() => new TimerManager(), { instanceOf: Error });
