@@ -605,6 +605,40 @@
 					"character": 0
 				}
 			]
+		},
+		{
+			"id": 32,
+			"name": "\"test/clears\"",
+			"kind": 1,
+			"kindString": "Module",
+			"flags": {
+				"isExported": true
+			},
+			"originalName": "/home/runner/work/timer-manager/timer-manager/test/clears.ts",
+			"sources": [
+				{
+					"fileName": "test/clears.ts",
+					"line": 1,
+					"character": 0
+				}
+			]
+		},
+		{
+			"id": 33,
+			"name": "\"test/destroy\"",
+			"kind": 1,
+			"kindString": "Module",
+			"flags": {
+				"isExported": true
+			},
+			"originalName": "/home/runner/work/timer-manager/timer-manager/test/destroy.ts",
+			"sources": [
+				{
+					"fileName": "test/destroy.ts",
+					"line": 1,
+					"character": 0
+				}
+			]
 		}
 	],
 	"groups": [
@@ -613,7 +647,9 @@
 			"kind": 1,
 			"children": [
 				1,
-				31
+				31,
+				32,
+				33
 			]
 		}
 	]
