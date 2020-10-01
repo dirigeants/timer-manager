@@ -313,7 +313,11 @@
 																		"type": "array",
 																		"elementType": {
 																			"type": "typeParameter",
-																			"name": "A"
+																			"name": "A",
+																			"default": {
+																				"type": "intrinsic",
+																				"name": "unknown"
+																			}
 																		}
 																	}
 																}
@@ -366,7 +370,11 @@
 												"type": "array",
 												"elementType": {
 													"type": "typeParameter",
-													"name": "A"
+													"name": "A",
+													"default": {
+														"type": "intrinsic",
+														"name": "unknown"
+													}
 												}
 											}
 										}
@@ -463,7 +471,11 @@
 																		"type": "array",
 																		"elementType": {
 																			"type": "typeParameter",
-																			"name": "A"
+																			"name": "A",
+																			"default": {
+																				"type": "intrinsic",
+																				"name": "unknown"
+																			}
 																		}
 																	}
 																}
@@ -516,7 +528,11 @@
 												"type": "array",
 												"elementType": {
 													"type": "typeParameter",
-													"name": "A"
+													"name": "A",
+													"default": {
+														"type": "intrinsic",
+														"name": "unknown"
+													}
 												}
 											}
 										}
